@@ -5,3 +5,18 @@ body {
     background-color: #3B5291;
     color: white;
 }
+/* Make images responsive on mobile */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Ensure images inside packages scale properly */
+.package img {
+    width: 100%;
+    max-width: 500px; /* Adjust max width */
+    height: auto;
+}
