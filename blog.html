@@ -25,6 +25,9 @@
       list-style: none;
       padding: 0;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     nav ul li {
       display: inline-block;
@@ -37,29 +40,23 @@
     }
     .menu-toggle {
       display: none;
-      font-size: 30px;
-      color: #F89C1F;
-      cursor: pointer;
-      padding: 10px;
-    }
-    #menu.hidden {
-      display: none;
     }
     @media (max-width: 768px) {
       .menu-toggle {
         display: block;
+        font-size: 30px;
+        color: #F89C1F;
+        cursor: pointer;
+        padding: 10px;
+        text-align: right;
       }
       nav ul {
         display: none;
         flex-direction: column;
         text-align: center;
       }
-      nav ul#menu {
+      nav ul.show {
         display: flex;
-      }
-      nav ul li {
-        display: block;
-        margin: 10px 0;
       }
     }
     section {
@@ -106,9 +103,9 @@
 <body>
   <header>
     <h1>Real Estate Safari - Mérida, Mexico</h1>
+    <div class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('show')">☰</div>
     <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul id="menu" class="hidden">
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="realtor.html">Realtor Services</a></li>
@@ -118,18 +115,18 @@
     </nav>
   </header>
 <section>
-    <h2>Blog</h2>
-    <article><h3><a href="blog-post-1.html">5 Things to Know Before Buying in Mérida</a></h3><p>Essential tips and common surprises about the Yucatán market.</p></article>
-    <article><h3><a href="blog-post-2.html">Top Neighborhoods for Expats</a></h3><p>Get to know the best areas for lifestyle, investment, and community.</p></article>
+    <h2>Latest Blog Posts</h2>
+    <article>
+      <h3><a href="blog-post-1.html">5 Things to Know Before Buying in Mérida</a></h3>
+      <p>Discover the essential considerations before investing in real estate in the Yucatán. From climate and architecture to legal nuances, we cover it all.</p>
+    </article>
+    <article>
+      <h3><a href="blog-post-2.html">Top Neighborhoods for Expats in Mérida</a></h3>
+      <p>Explore the most popular and up-and-coming areas among expats and digital nomads. Learn what makes each neighborhood unique.</p>
+    </article>
     </section>
   <footer>
     <p>&copy; 2025 Real Estate Safari - Mérida, Mexico. All rights reserved.</p>
   </footer>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
 </body>
 </html>

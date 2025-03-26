@@ -25,6 +25,9 @@
       list-style: none;
       padding: 0;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     nav ul li {
       display: inline-block;
@@ -37,29 +40,23 @@
     }
     .menu-toggle {
       display: none;
-      font-size: 30px;
-      color: #F89C1F;
-      cursor: pointer;
-      padding: 10px;
-    }
-    #menu.hidden {
-      display: none;
     }
     @media (max-width: 768px) {
       .menu-toggle {
         display: block;
+        font-size: 30px;
+        color: #F89C1F;
+        cursor: pointer;
+        padding: 10px;
+        text-align: right;
       }
       nav ul {
         display: none;
         flex-direction: column;
         text-align: center;
       }
-      nav ul#menu {
+      nav ul.show {
         display: flex;
-      }
-      nav ul li {
-        display: block;
-        margin: 10px 0;
       }
     }
     section {
@@ -106,9 +103,9 @@
 <body>
   <header>
     <h1>Real Estate Safari - Mérida, Mexico</h1>
+    <div class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('show')">☰</div>
     <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul id="menu" class="hidden">
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="realtor.html">Realtor Services</a></li>
@@ -118,18 +115,13 @@
     </nav>
   </header>
 <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:Nick@nicolasvanderzanden.com">Nick@nicolasvanderzanden.com</a></p>
-    <p>WhatsApp (Canada): +1 905 902 6425<br>WhatsApp (Mexico): +52 999 198 5284</p>
+    <h2>Book Your Real Estate Safari</h2>
+    <p>Schedule a consultation and embark on a luxury real estate journey with us.</p>
+    <p>📩 Contact: <a href="mailto:Nick@nicolasvanderzanden.com">Nick@nicolasvanderzanden.com</a></p>
+    <p>📞 WhatsApp (Canada): +1 905 902 6425<br>📞 WhatsApp (Mexico): +52 999 198 5284</p>
     </section>
   <footer>
     <p>&copy; 2025 Real Estate Safari - Mérida, Mexico. All rights reserved.</p>
   </footer>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
 </body>
 </html>
