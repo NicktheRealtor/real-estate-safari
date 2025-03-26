@@ -6,41 +6,37 @@ body {
   color: white;
   text-align: center;
 }
-
 header {
-  background: #444;
+  background-color: #444;
   color: #F89C1F;
   padding: 20px;
 }
-
 .logo {
   width: 120px;
-  display: block;
-  margin: 0 auto 10px;
+  margin-bottom: 10px;
 }
-
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 20px 0;
 }
-
 nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 15px;
 }
-
 nav a {
   color: #F89C1F;
   text-decoration: none;
   font-weight: bold;
 }
-
 .menu-toggle {
   display: none;
   font-size: 30px;
   cursor: pointer;
 }
-
+section {
+  padding: 40px 20px;
+}
 .hero-img {
   width: 100%;
   max-width: 700px;
@@ -48,49 +44,53 @@ nav a {
   margin: 20px auto;
   border-radius: 12px;
 }
-
-.cta {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #F89C1F;
-  color: #3B5291;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
+.package {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 2px solid #F89C1F;
+  padding: 20px;
 }
-
+.package img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F89C1F;
+}
 footer {
-  background: #3B5291;
+  background-color: #3B5291;
   color: #F89C1F;
   padding: 20px;
 }
-
+.cta {
+  display: inline-block;
+  background-color: #F89C1F;
+  color: #3B5291;
+  padding: 12px 24px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+}
 .hidden {
   display: none;
 }
-
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
   nav ul {
     display: none;
     flex-direction: column;
   }
-
-  nav ul.show {
+  nav ul#menu.show {
     display: flex;
   }
-
-  .menu-toggle {
-    display: block;
-  }
-
   nav ul li {
     display: block;
     margin: 10px 0;
-  }
-
-  .hero-img {
-    width: 100%;
-    max-width: 90%;
   }
 }

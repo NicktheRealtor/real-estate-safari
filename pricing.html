@@ -1,1 +1,58 @@
-<h1>Pricing Page</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Tour - Mérida, Mexico</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Real Estate Tour Logo" class="logo">
+    <h1>Real Estate Tour - Mérida, Mexico</h1>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="realtor.html">Realtor Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section>
+  <h2>Pricing Packages</h2>
+  <div class="package">
+    <h3>Basic Package</h3>
+    <img src="images/palm_trees.jpg" alt="Basic">
+    <p>Includes an in-person or online consultation and one-day city tour.</p>
+    <p class="price">$500 USD</p>
+  </div>
+  <div class="package">
+    <h3>Premium Package</h3>
+    <img src="images/quiet_coffee_shop.jpg" alt="Premium">
+    <p>Two-day experience with deep dives into specific areas and property previews.</p>
+    <p class="price">$900 USD</p>
+  </div>
+  <div class="package">
+    <h3>Luxury Package</h3>
+    <img src="images/fancy_restaurant.jpg" alt="Luxury">
+    <p>All-inclusive service with pickup, meals, and tailored itinerary.</p>
+    <p class="price">Custom Pricing</p>
+  </div>
+</section>
+  <footer>
+    <p>&copy; 2025 Real Estate Tour - Mérida, Mexico. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
