@@ -2,18 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real Estate Tour - Mérida, Mexico</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Real Estate Tour Logo" style="max-width: 200px;">
+    <img src="images/logo.png" alt="Real Estate Tour Logo" class="logo">
     <h1>Real Estate Tour - Mérida, Mexico</h1>
     <nav>
-      <ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu" class="hidden">
         <li><a href="index.html">Home</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="realtor.html">Realtor Services</a></li>
@@ -22,9 +24,25 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h2>Welcome</h2>
-    <p>This is the full version of your site with logo and favicon fully integrated.</p>
-  </main>
+
+  <section id="hero">
+    <img src="images/purple_downtown_building.jpg" alt="Downtown Building" class="hero-image">
+    <p>Moving to Mérida or anywhere in Yucatán is an exciting decision, but one that requires careful planning and knowledge. Understanding the geography is just one part of the puzzle—finding a neighborhood that aligns with your lifestyle, needs, and expectations is equally crucial.</p>
+    <p>Our Real Estate Tour provides an in-depth exploration of the local market, guiding you through the key areas and what you should be looking for before making a decision. With my expertise as a local realtor, I tailor each tour to your specific needs through a personalized consultation. Whether you're seeking tranquility, vibrant city life, or beachfront living, I help you navigate the market and connect you with trusted professionals to ensure a smooth transition.</p>
+    <p>Make an informed decision before you buy—let’s find the right fit for you.</p>
+    <h2>Discover Mérida’s Most Exclusive Properties</h2>
+    <p>A luxury-guided real estate experience for discerning buyers.</p>
+    <a href="contact.html" class="cta">Book Your Tour</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real Estate Tour - Mérida, Mexico. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>
