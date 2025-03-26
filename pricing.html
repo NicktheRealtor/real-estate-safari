@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Real Estate Safari - Mérida, Mexico</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Tilt+Warp&display=swap');
     body {
       font-family: 'Lato', sans-serif;
       margin: 0;
@@ -17,6 +18,7 @@
       color: #F89C1F;
       padding: 20px;
       text-align: center;
+      font-family: 'Tilt Warp', cursive;
       font-size: 28px;
     }
     nav ul {
@@ -25,24 +27,13 @@
       text-align: center;
     }
     nav ul li {
-      display: inline;
+      display: inline-block;
       margin: 0 15px;
     }
     nav ul li a {
       color: #F89C1F;
       text-decoration: none;
       font-weight: bold;
-    }
-    section {
-      padding: 40px;
-      text-align: center;
-    }
-    footer {
-      background: #3B5291;
-      color: #F89C1F;
-      text-align: center;
-      padding: 10px;
-      font-size: 18px;
     }
     .menu-toggle {
       display: none;
@@ -63,49 +54,82 @@
         flex-direction: column;
         text-align: center;
       }
-      nav ul li {
-        margin: 10px 0;
-        display: block;
-      }
       nav ul#menu {
         display: flex;
       }
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    section p {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .package {
+      background: #3B5291;
+      border: 2px solid #F89C1F;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    .package h3 {
+      color: #F89C1F;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #F89C1F;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+    footer {
+      background: #3B5291;
+      color: #F89C1F;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-<header>
-  <h1>Real Estate Safari - Mérida, Mexico</h1>
-  <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <ul id="menu" class="hidden">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="realtor.html">Realtor Services</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<section>
-        <h2>Our Pricing Packages</h2>
-        <div>
-            <h3>Basic Package</h3>
-            <p>$500 USD - Approx. 4 hours, includes transportation.</p>
-            <h3>Premium Package</h3>
-            <p>$900 USD - Two-day experience, includes transportation.</p>
-            <h3>Luxury VIP Package</h3>
-            <p>Custom Pricing - Based on consultation.</p>
-        </div>
+  <header>
+    <h1>Real Estate Safari - Mérida, Mexico</h1>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="realtor.html">Realtor Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<section><h2>Pricing</h2>
+    <div class="package"><h3>Basic</h3><p>$500 USD - 1-day intro tour</p></div>
+    <div class="package"><h3>Premium</h3><p>$900 USD - 2-day area deep dive</p></div>
+    <div class="package"><h3>Luxury</h3><p>Custom - All-inclusive w/ travel</p></div>
     </section>
-<footer>
-  <p>&copy; 2025 Real Estate Safari - Mérida, Mexico. All rights reserved.</p>
-</footer>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById('menu');
-  menu.classList.toggle('hidden');
-}
-</script>
+  <footer>
+    <p>&copy; 2025 Real Estate Safari - Mérida, Mexico. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>

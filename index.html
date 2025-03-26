@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,6 @@
   <title>Real Estate Safari - Mérida, Mexico</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Tilt+Warp&display=swap');
-
     body {
       font-family: 'Lato', sans-serif;
       margin: 0;
@@ -84,8 +82,10 @@
     .package h3 {
       color: #F89C1F;
     }
-    .package p, .price {
+    .price {
       font-size: 20px;
+      font-weight: bold;
+      color: #F89C1F;
     }
     img {
       max-width: 100%;
@@ -109,73 +109,18 @@
     <nav>
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul id="menu" class="hidden">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#realtor-services">Realtor Services</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="realtor.html">Realtor Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <section id="hero">
-    <img src="images/purple_downtown_building.jpg" style="max-width: 800px;" />
-    <p>Moving to Mérida or anywhere in Yucatán is an exciting decision, but one that requires careful planning and knowledge...</p>
-    <p>Our Real Estate Safari provides an in-depth exploration of the local market, guiding you through the key areas...</p>
-    <p>Make an informed decision before you buy—let’s find the right fit for you.</p>
-  </section>
-
-  <section id="pricing">
-    <h2>Our Pricing Packages</h2>
-    <div class="package">
-      <h3>Basic Package</h3>
-      <img src="images/palm_trees.jpg" />
-      <p>Includes an in-person or online consultation to determine your needs...</p>
-      <p class="price">$500 USD (Approx. 4 hours)</p>
-    </div>
-    <div class="package">
-      <h3>Premium Package</h3>
-      <img src="images/quiet_coffee_shop.jpg" />
-      <p>Everything in Basic plus a more in-depth second day focused on areas of interest...</p>
-      <p class="price">$900 USD</p>
-    </div>
-    <div class="package">
-      <h3>Luxury Package</h3>
-      <img src="images/fancy_restaurant.jpg" />
-      <p>All-inclusive: Airport pickup, lodging, food, and private transportation...</p>
-      <p class="price">Custom Pricing</p>
-    </div>
-  </section>
-
-  <section id="realtor-services">
-    <img src="images/streetscape.jpg" style="max-width: 600px;" />
-    <h2>Exclusive Realtor Benefits</h2>
-    <p>If you purchase a property through me, the full Safari fee is credited back up to $1000 or 10% of my commission.</p>
-  </section>
-
-  <section id="blog">
-    <h2>Latest Blog Posts</h2>
-    <article>
-      <h3>5 Things to Know Before Buying in Mérida</h3>
-      <p>Discover key tips and regional insights before making a purchase in Yucatán.</p>
-    </article>
-    <article>
-      <h3>Top Neighborhoods for Expats</h3>
-      <p>Explore the best areas to live for comfort, community, and culture.</p>
-    </article>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:Nick@nicolasvanderzanden.com">Nick@nicolasvanderzanden.com</a></p>
-    <p>WhatsApp (Canada): +1 905 902 6425</p>
-    <p>WhatsApp (Mexico): +52 999 198 5284</p>
-  </section>
-
+<section><h2>Welcome</h2><p>Explore Mérida with expert real estate insights before making the move.</p><img src='images/purple_downtown_building.jpg' style='max-width:800px;'/></section>
   <footer>
     <p>&copy; 2025 Real Estate Safari - Mérida, Mexico. All rights reserved.</p>
   </footer>
-
   <script>
     function toggleMenu() {
       const menu = document.getElementById('menu');
