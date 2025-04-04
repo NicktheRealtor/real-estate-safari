@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Tour - Mérida, Mexico</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Real Estate Tour Logo" class="logo">
+    <h1>Real Estate Tour - Mérida, Mexico</h1>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="realtor.html">Realtor Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:Nick@nicolasvanderzanden.com">Nick@nicolasvanderzanden.com</a></p>
+  <p>WhatsApp Canada: +1 905 902 6425<br>WhatsApp Mexico: +52 999 198 5284</p>
+</section>
+  <footer>
+    <p>&copy; 2025 Real Estate Tour - Mérida, Mexico. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
